@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* Specify background image */
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* Ensure the background image takes up the entire viewport */
+    min-height: 100vh;
+    /* Apply blur effect to the entire background */
+    overflow: hidden; /* Prevent scrolling beyond viewport */
+    position: relative;
+}
+
+/* Pseudo-element to apply blur effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Apply blur effect */
+    background: inherit;
+    filter: blur(6px); /* Adjust the blur radius as needed */
+    z-index: -1; /* Place the pseudo-element behind other content */
+}
+
+/* Container for login box */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Login box styles */
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    max-width: 300px; /* Optional: Adjust the max width */
+    width: 200%; /* Ensure the login box takes full width */
+}
+
+/* Adjust margin for the heading */
+.login-box h1 {
+    margin-top: 5px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Optional: Adjust the bottom margin */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a30b0e;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,110 @@
+/* Custom CSS */
+body {
+    background-image: url('bg.jpeg'); /* Replace 'bg-image.jpg' with your image path */
+    background-size: auto;
+    background-position: center;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    color: white; /* Set text color */
+    /* Apply blur effect to the entire background */
+    backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    position: fixed; /* Fix the header position */
+    top: 0; /* Position the header at the top of the viewport */
+    width: 100%; /* Make the header span the entire width of the viewport */
+    z-index: 1000; /* Ensure the header is above other content */
+    background-color: rgba(160, 15, 2, 0.945); /* Add background color to the header */
+    color: white; /* Set text color */
+    padding: 8px 0; /* Add padding to the header */
+    box-shadow: 1px 1px 1px #190a09fb;
+}
+
+/* Footer */
+.footer {
+    background-color: #090202; 
+    color: rgba(232, 223, 223, 0.995);
+    padding: 20px 0;
+}
+
+/* Login Section */
+.login-section {
+    background-color: #10090900;
+    color: white;
+    padding: 25px 15px 0px;
+    position: relative;
+    box-shadow: 1px 1px 1px #190a09fb;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 4, 4, 0.752);
+    z-index: -1;
+}
+
+
+
+/* Button used in login section */
+.login-section .btn-primary {
+    background-color: #eb3507d2;
+    border: none;
+    padding: 10px 100px; /* Adjust button padding */
+    font-size: 18px; /* Adjust button font size */
+    border-radius: 10px;
+    margin: 5px; /* Add margin to create space between buttons */
+    box-shadow: 0px 0px 10px #120807c2;
+}
+
+.login-section .btn-primary:hover {
+    background-color: #a94e1a;
+}
+/* carousel  */
+.carousel-item img {
+    height: 400px; /* Adjust height of carousel images */
+    object-fit: cover;
+    box-shadow: 1px 1px 5px #190a09fb;
+}
+.carousel-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the last value (0.5) to adjust the opacity */
+}
+
+/* container */
+.container {
+    /* Your container styles */
+    width: 80%; /* Example width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Position container relative for z-index */
+    z-index: 1; /* Ensure container is above background */
+}
+.container2 {
+/* Your container styles */
+width: 50%; /* Example width for the container */
+margin: 1 auto; /* Center the container horizontally */
+position: relative; /* Position container relative for z-index */
+z-index: 1; /* Ensure container is above background */
+}
+
+
+
+/* header icon and app name */
+.app-icon {
+    max-width: 50px;
+    padding-left: 15px; /* Adjust the maximum width of the icon */
+}
+.app-name {
+    font-family: "Gill Sans", sans-serif; /* Specify your special font */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+    margin-bottom: 0; /* Remove bottom margin */}
